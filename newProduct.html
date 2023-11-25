@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_login.css">
     <title>Document</title>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <br>
-            <img src="img\TheStore.png" alt="TheStore Logo" width="200" height="100">
-            <br>
-            <a href="newProduct.html">TheStore</a>
-        </ul>
-    </nav>
-    <br>
-    <form >
-        <label for="name">Nombre:</label>
-        <input type="text" name="name" placeholder="Nombre" required>
-        <br>
-        <br>
-        <label for="precio">Precio:</label>
-        <input type="number" price="precio" placeholder="Precio" required>
-        <br>
-        <br>
-        <label for="inventory">Invento:</label>
-        <input type="number" inventory="Inventory" placeholder="Invento">
-        <br>
-        <br>
-        <input type="reset" value="Borrar">
-        <input type="submit" value="Crear producto">
-    </form>
+    <div class="main_menu">
+        <nav>
+            <ul>
+                <img class="logo" src="img\TheStore.png" alt="TheStore Logo">
+                <div class="menu_content">
+                    <a href="">Product</a>
+                    <a href="">Login</a>
+                    <a href="newProduct.html">New Product</a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="login_box">
+        <form action="">
+            <h2>product</h2>
+            <div class="input_box">
+                <input type="text" name="name" required>
+                <span data-for="name">Name</span>
+                <i></i>
+            </div>
+            
+            <div class="input_box">
+                <input type="number" price="price" required>
+                <span for="price">Price</span>
+                <i></i>
+            </div>
+
+            <div class="input_box">
+                <input type="number" inventory="Inventory" required>
+                <span for="inventory">Inventory</span>
+                <i></i>
+            </div>
+            
+            <div class="input_submit">
+                <input type="submit" value="Create product">
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>

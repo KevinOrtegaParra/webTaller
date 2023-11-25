@@ -1,0 +1,75 @@
+.login_box{
+    width: 26%;
+    height: auto;
+    border-radius: 5%;
+    font-size: 20px;
+    margin-left: 35%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    background-color: rgba(51, 46, 46, 0.384);
+    text-align: center;
+}
+.login_box form input{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.input_box input{
+    position: relative;
+    width: 100%;
+    border: none;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.input_box span{
+    position:absolute;
+    padding: 55px 0px 0px;
+    left: 20px;
+    pointer-events: none;
+    color: rgb(95, 89, 89);
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.input_box input:valid ~ span,
+.input_box input:focus ~ span
+{
+    color: rgb(0, 0, 0);
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.input_box{
+    position: relative;
+}
+.input_box i{
+    position: absolute;
+    left: 15px;
+    width: 90%;
+    bottom: 0;
+    height: 2px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    pointer-events: none;
+    transition: 0.5s;
+}
+.input_box input:valid ~ i,
+.input_box input:focus ~ i{
+    height: 44px;
+}
+.input_submit input{
+    border-radius: 10px;
+    background-color: yellow;
+    border: none;
+    height: 40px;
+}
+.input_submit input:active{
+    background-color: rgb(161, 161, 1);
+}
