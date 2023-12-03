@@ -26,28 +26,35 @@
         <form action="">
             <h2>product</h2>
             <div class="input_box">
-                <input type="text" name="name" required>
+                <input id="name" type="text" name="name" required>
                 <span data-for="name">Name</span>
                 <i></i>
             </div>
-            
+            <p id="messageName"></p>
+
             <div class="input_box">
-                <input type="number" price="price" required>
+                <input id="price" type="number" price="price" required>
                 <span for="price">Price</span>
                 <i></i>
             </div>
+            <p id="messagePrice"></p>
 
             <div class="input_box">
-                <input type="number" inventory="Inventory" required>
+                <input id="inventory" type="number" inventory="Inventory" required>
                 <span for="inventory">Inventory</span>
                 <i></i>
             </div>
+            <p id="messageInventory"></p>
             
             <div class="input_submit">
-                <input type="submit" value="Create product">
+                <input id="createProduct" type="button" value="Create product">
             </div>
         </form>
     </div>
+    
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </body>
 
 </html>

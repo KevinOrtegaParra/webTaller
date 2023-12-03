@@ -73,3 +73,9 @@
 .input_submit input:active{
     background-color: rgb(161, 161, 1);
 }
+p{
+    color: red;
+    font-size: 12px;
+    padding-left: 10px;
+    text-align: left;
+}
